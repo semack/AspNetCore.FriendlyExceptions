@@ -7,7 +7,7 @@ install:
  - dotnet restore
 script:
  #- dotnet build
- - dotnet pack --output nupkgs 
+ - dotnet pack --configuration release --output nupkgs 
  - nuget push ./src/nupkgs/AspNetCore.FriendlyExceptions.*.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
  #- nuget pack ./AspNetCore.FriendlyExceptions.nuspec -Verbosity detailed
  #- nuget push ./AspNetCore.FriendlyExceptions.*.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
