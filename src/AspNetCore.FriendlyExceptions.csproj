@@ -4,9 +4,9 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <PackageId>AspNetCore.FriendlyExceptions</PackageId>
     <Authors>abergs, semack</Authors>
-    <Company>AspNetCore.FriendlyExceptions</Company>
+    <Company>ONLINICO</Company>
     <Product>AspNetCore.FriendlyExceptions</Product>
-    <Version>0.0.1</Version>
+    <Version>0.0.1.2</Version>
     <AssemblyName>AspNetCore.FriendlyExceptions</AssemblyName>
     <RootNamespace>AspNetCore.FriendlyExceptions</RootNamespace>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
