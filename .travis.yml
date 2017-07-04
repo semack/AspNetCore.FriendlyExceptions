@@ -8,5 +8,5 @@ install:
  - dotnet restore
 script:
  - dotnet build
- - nuget pack ./deploy/AspNetCore.FriendlyExceptions.nuspec -Verbosity detailed
+ - nuget pack ./AspNetCore.FriendlyExceptions.nuspec -Verbosity detailed
  - nuget push ./AspNetCore.FriendlyExceptions.*.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
