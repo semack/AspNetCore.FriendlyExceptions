@@ -2,6 +2,13 @@ language: csharp
 mono: none
 dotnet: 1.0.3
 dist: trusty
-script:
+install:
  - dotnet restore
+script:
  - dotnet build
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: chmod +x ./deploy/deploy.sh && ./deploy/deploy.sh $NUGET_API_KEY $NUGET_SOURCE
+  on:
+    branch: master
