@@ -1,6 +1,4 @@
-# ASP.NET Core Friendly Exceptions Filter and Middleware 
-Build Status: [![Build Status](https://travis-ci.org/semack/AspNetCore.FriendlyExceptions.svg?branch=master)](https://travis-ci.org/semack/AspNetCore.FriendlyExceptions)
-
+# ASP.NET Core Friendly Exceptions Filter and Middleware  [![Build Status](https://travis-ci.org/semack/AspNetCore.FriendlyExceptions.svg?branch=master)](https://travis-ci.org/semack/AspNetCore.FriendlyExceptions)
 
 A filter and middleware that can translate exceptions into nice http resonses. This allows you to throw meaningfull exceptions from your framework, business code or other middlewares and translate the exceptions to nice and friendly http responses.
 
