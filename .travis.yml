@@ -8,3 +8,4 @@ install:
 script:
  - dotnet pack --configuration release --output nupkgs 
  - dotnet nuget push ./src/nupkgs/AspNetCore.FriendlyExceptions.*.nupkg -k $NUGET_API_KEY -s $NUGET_SOURCE
+
