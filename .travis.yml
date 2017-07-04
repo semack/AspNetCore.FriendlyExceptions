@@ -1,13 +1,11 @@
 language: csharp
 mono: latest
 dotnet: 1.0.3
-sudo: required
+sudo: none
 dist: trusty
 install:
  - dotnet restore
 script:
- #- dotnet build
  - dotnet pack --configuration release --output nupkgs 
- - nuget push ./src/nupkgs/AspNetCore.FriendlyExceptions.*.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
- #- nuget pack ./AspNetCore.FriendlyExceptions.nuspec -Verbosity detailed
- #- nuget push ./AspNetCore.FriendlyExceptions.*.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
+ - dotnet-nuget push ./src/nupkgs/AspNetCore.FriendlyExceptions.*.nupkg --apikey $NUGET_API_KEY --source $NUGET_SOURCE
+ # - nuget push ./src/nupkgs/AspNetCore.FriendlyExceptions.*.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
