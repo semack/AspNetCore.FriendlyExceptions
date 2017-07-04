@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PackageId>AspNetCore.FriendlyExceptions</PackageId>
+    <Authors>AspNetCore.FriendlyExceptions</Authors>
+    <Company>AspNetCore.FriendlyExceptions</Company>
+    <Product>AspNetCore.FriendlyExceptions</Product>
+    <Version>0.0.1</Version>
+    <AssemblyName>AspNetCore.FriendlyExceptions</AssemblyName>
+    <RootNamespace>AspNetCore.FriendlyExceptions</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Transforms\Interfaces\" />
+  </ItemGroup>
+
+</Project>
