@@ -6,9 +6,9 @@ install:
  - dotnet restore
 script:
  - dotnet build
-deploy:
  - nuget pack ./deploy/AspNetCore.FriendlyExceptions.nuspec -Verbosity detailed
  - nuget push ./AspNetCore.FriendlyExceptions.*.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
+# deploy:
 #  skip_cleanup: true
 #  provider: script
 #  script: chmod +x ./deploy/deploy.sh && ./deploy/deploy.sh $NUGET_API_KEY $NUGET_SOURCE
