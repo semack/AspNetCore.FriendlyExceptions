@@ -6,7 +6,7 @@
     <Authors>abergs, semack</Authors>
     <Company>ONLINICO</Company>
     <Product>AspNetCore.FriendlyExceptions</Product>
-    <Version>0.0.1.6</Version>
+    <Version>0.0.1.7</Version>
     <AssemblyName>AspNetCore.FriendlyExceptions</AssemblyName>
     <RootNamespace>AspNetCore.FriendlyExceptions</RootNamespace>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
@@ -16,7 +16,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>middleware asp-net-core asp-net-core-web-api asp-net-core-mvc exception-handling</PackageTags>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-    <AssemblyVersion>0.0.1.6</AssemblyVersion>
+    <AssemblyVersion>0.0.1.7</AssemblyVersion>
     <Copyright>Copyright ©2015-2017 Anders Åberg, Andriy S'omak</Copyright>
     <Description>ASP.NET Core Friendly Exceptions Filter and Middleware.
 A filter and middleware that can translate exceptions into nice http resonses. This allows you to throw meaningfull exceptions from your framework, business code or other middlewares and translate the exceptions to nice and friendly http responses.</Description>
