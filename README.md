@@ -66,7 +66,7 @@ Register ExceptionFilter.
             ...
         }                
 ```
-Add filter attribute to a Controller.
+Add filter attribute to the Controller.
 ```cs
     [Produces("application/json")]
     [TypeFilter(typeof(FriendlyExceptionAttribute))]
@@ -75,7 +75,7 @@ Add filter attribute to a Controller.
         ...
 ```
 ### Using Middleware
-In case you use middleware, the registration method mush be at the top of list of all registrations.
+In case you use middleware, the registration method must be at the top of list of all registrations.
 ```cs
         public void Configure(IApplicationBuilder app)
         {
