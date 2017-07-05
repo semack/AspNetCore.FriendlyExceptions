@@ -5,11 +5,22 @@ A filter and middleware that can translate exceptions into nice http resonses. T
 ### Authors
 This code based on [Owin Friendly Exceptions Middleware](https://github.com/abergs/OwinFriendlyExceptions) created by [Anders Åberg](https://github.com/abergs) and has been adapted for APS.NET Core usage by [Andriy S'omak](https://github.com/semack).
 
-### Installation
-Coming soon...
+## Installation
+
+`Install-package OwinFriendlyExceptions`
 
 ### Examples
+```cs
 Coming soon...
+```
+
+### Specify content type
+By default, OwinFriendlyExceptions sets the response Content-Type to `text/plain`. To use a different type:
+```cs    
+    .Map<SomeJsonException>()
+    .To(HttpStatusCode.BadRequest, "This exception is json",
+        ex => JsonConvert.SerializeObject(ex.Message), "application/json")
+```
 
 ### Contribute
 Contributions are welcome. Just open an Issue or submit a PR. 
