@@ -6,7 +6,7 @@
     <Authors>abergs, semack</Authors>
     <Company>ONLINICO</Company>
     <Product>AspNetCore.FriendlyExceptions</Product>
-    <Version>0.0.1.4</Version>
+    <Version>0.0.1.5</Version>
     <AssemblyName>AspNetCore.FriendlyExceptions</AssemblyName>
     <RootNamespace>AspNetCore.FriendlyExceptions</RootNamespace>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
@@ -14,7 +14,7 @@
     <PackageProjectUrl>https://github.com/semack/AspNetCore.FriendlyExceptions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/semack/AspNetCore.FriendlyExceptions.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>ASP.NET Core Friendly Exceptions Filter and Middleware</PackageTags>
+    <PackageTags>middleware asp-net-core asp-net-core-web-api asp-net-core-mvc exception-handling</PackageTags>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
     <AssemblyVersion>0.0.1.2</AssemblyVersion>
     <Copyright>Copyright ©2015-2017 Anders Åberg, Andriy S'omak</Copyright>
