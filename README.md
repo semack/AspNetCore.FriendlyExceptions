@@ -10,7 +10,7 @@ This code based on [Owin Friendly Exceptions Middleware](https://github.com/aber
 `Install-package OwinFriendlyExceptions`
 
 ## Examples of usage
-There are a two ways of usage of the library: using ActionFilter or registering Midlleware. You can choise any of them.
+There are a two ways of usage of the library: using ExceptionFilter or registering Midlleware. You can choise any of them.
 
 ### Configuration
 Add transformation rules to the Startup.cs file.
@@ -55,7 +55,7 @@ By default, OwinFriendlyExceptions sets the response Content-Type to `text/plain
 ```
 
 ### Using filter
-Register ActionFilter.
+Register ExceptionFilter.
 ```cs
         public void ConfigureServices(IServiceCollection services)
         {
