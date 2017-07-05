@@ -46,7 +46,7 @@ Add transformation rules to the Startup.cs file.
             ...
         }
 ```
-### Specify content type
+
 By default, OwinFriendlyExceptions sets the response Content-Type to `text/plain`. To use a different type:
 ```cs    
     .Map<SomeJsonException>()
