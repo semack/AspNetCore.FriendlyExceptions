@@ -7,7 +7,7 @@ This code based on [Owin Friendly Exceptions Middleware](https://github.com/aber
 
 ## Installation
 
-`Install-package OwinFriendlyExceptions`
+`Install-Package AspNetCore.FriendlyExceptions`
 
 ## Examples of usage
 There are a two ways of usage of the library: using ExceptionFilter or registering Midlleware. You can choise any of them.
