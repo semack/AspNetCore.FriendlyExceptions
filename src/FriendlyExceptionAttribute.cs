@@ -8,18 +8,12 @@ namespace AspNetCore.FriendlyExceptions
 {
     public class FriendlyExceptionAttribute : ExceptionFilterAttribute
     {
-        private readonly IOptions<TranformOptions> _options;
-
-        public FriendlyExceptionAttribute(IOptions<TranformOptions> options)
-        {
-            _options = options;
-        }
-
         public override async Task OnExceptionAsync(ExceptionContext context)
         {
             if (context.Exception != null)
             {
-                await context.HttpContext.HandleExceptionAsync(_options, context.Exception);
+                var options = context.HttpContext.RequestServices.GetService(typeof(IOptions<TranformOptions>)) as IOptions<TranformOptions>;
+                await context.HttpContext.HandleExceptionAsync(options, context.Exception);
                 context.ExceptionHandled = true;
             }
         }
