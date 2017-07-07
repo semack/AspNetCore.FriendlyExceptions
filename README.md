@@ -69,7 +69,7 @@ Register ExceptionFilter.
 Add filter attribute to the Controller.
 ```cs
     [Produces("application/json")]
-    [TypeFilter(typeof(FriendlyExceptionAttribute))]
+    [FriendlyException]
     public class AccountController : Controller
     {
         ...
