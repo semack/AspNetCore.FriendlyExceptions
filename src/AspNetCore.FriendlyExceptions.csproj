@@ -16,7 +16,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>middleware asp-net-core asp-net-core-web-api asp-net-core-mvc exception-handling</PackageTags>
     <PackageReleaseNotes>Adeed possibility to use ExceptionFilter without callingTypeFilter()</PackageReleaseNotes>
-    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <AssemblyVersion>0.0.1$(VersionSuffix)</AssemblyVersion>
     <Copyright>Copyright ©2015-2017 Anders Åberg, Andriy S'omak</Copyright>
     <Summary>ASP.NET Core Friendly Exceptions Filter and Middleware.</Summary>
     <Description>A filter and middleware that can translate exceptions into nice http resonses. This allows you to throw meaningfull exceptions from your framework, business code or other middlewares and translate the exceptions to nice and friendly http responses.</Description>
