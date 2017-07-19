@@ -9,8 +9,4 @@ install:
 
 script:
  - dotnet pack --configuration release --output nupkgs --version-suffix .$TRAVIS_BUILD_NUMBER
-
-deploy:
-  provider: script
-  script: 
-    - dotnet nuget push ./src/nupkgs/AspNetCore.FriendlyExceptions.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+ - dotnet nuget push ./src/nupkgs/AspNetCore.FriendlyExceptions.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
