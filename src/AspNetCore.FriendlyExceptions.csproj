@@ -6,7 +6,7 @@
     <Authors>abergs, semack</Authors>
     <Company>ONLINICO</Company>
     <Product>AspNetCore.FriendlyExceptions</Product>
-    <Version>0.0.1.*</Version>
+    <Version>0.0.1.$(VersionSuffix)</Version>
     <AssemblyName>AspNetCore.FriendlyExceptions</AssemblyName>
     <RootNamespace>AspNetCore.FriendlyExceptions</RootNamespace>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
