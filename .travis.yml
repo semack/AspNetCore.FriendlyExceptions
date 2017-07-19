@@ -4,7 +4,7 @@ dotnet: 1.0.3
 sudo: required
 dist: trusty
 install:
- - dotnet restore
+ - chmod +x ./build.sh  
 script:
- - dotnet pack --configuration release --output nupkgs 
- - dotnet nuget push ./src/nupkgs/AspNetCore.FriendlyExceptions.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+ - ./build.sh 
+
