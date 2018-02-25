@@ -43,6 +43,7 @@ Add transformation rules to the Startup.cs file.
                     // Also it would be useful if you want to map exception to a known model.
                     .MapAllOthers()
                     .To(HttpStatusCode.InternalServerError, "Internal Server Error", ex => ex.Message)
+                    
                     .Done();
             });
             ...
