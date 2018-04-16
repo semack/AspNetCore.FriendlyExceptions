@@ -6,12 +6,12 @@ A filter and middleware that can translate exceptions into nice http resonses. T
 This code based on [Owin Friendly Exceptions Middleware](https://github.com/abergs/OwinFriendlyExceptions) created by [Anders Åberg](https://github.com/abergs) and has been adapted for ASP.NET Core usage by [Andriy S'omak](https://github.com/semack).
 
 ## Installation
-Before usage of the library [Nuget Package](https://www.nuget.org/packages/AspNetCore.FriendlyExceptions/) must be installed.
+Before using of the library [Nuget Package](https://www.nuget.org/packages/AspNetCore.FriendlyExceptions/) must be installed.
 
 `Install-Package AspNetCore.FriendlyExceptions`
 
 ## Examples of usage
-There are a two ways of usage of the library: using ExceptionFilter or registering Midlleware. You can choose any of them.
+There are a two ways of using of the library: using ExceptionFilter or registering Midlleware. You can choose any of them.
 
 ### Configuration
 Add transformation rules to the Startup.cs file.
